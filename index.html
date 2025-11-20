@@ -214,9 +214,10 @@
 
     .profile-pic {
       margin-top: 2.5rem;
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
+      width: 250px;
+      height: 400px;
+      border-top-left-radius: 40%;
+      border-top-right-radius:  40%;
       overflow: hidden;
       border: 4px solid #f43f5e;
       box-shadow: 0 5px 20px rgba(244, 63, 94, 0.4);
@@ -807,7 +808,8 @@
       
       .profile-pic {
         width: 150px;
-        height: 150px;
+        height: 300px;
+       
       }
       
       .stats {
@@ -877,14 +879,14 @@
     <h2>Hello, I'm</h2>
     <h1>Nitin Rajput</h1>
     <div class="typing">
-      <span class="typing-text">Web Developer | Tech Enthusiast</span>
+      <span class="typing-text">MERN Full Stack Developer</span>
     </div>
     <div class="buttons">
       <a href="#" class="btn" onclick="downloadCV()">Download CV</a>
       <a href="#about" class="btn btn-outline">About Me</a>
     </div>
     <div class="profile-pic">
-      <img src="WhatsApp Image 2025-04-23 at 11.30.01_c5812896.jpg" alt="Nitin's Profile Picture">
+      <img src="Nitin_picture.png" alt="Nitin's Profile Picture">
     </div>
     <div class="scroll-down">
       <span>Scroll Down</span>
@@ -904,9 +906,10 @@
       <h2>About Me</h2>
       <div class="about-content">
         <div class="text fadeIn">
-          <p>Hi, I'm Nitin—a tech enthusiast and BTech CSE student at RIT Roorkee with a deep passion for web technologies. My journey in tech began with an eagerness to solve real-world problems through impactful digital solutions, and that passion continues to drive me every day.</p>
-          <p>Over the past 1+ years, I have honed my skills in web development, creating responsive and user-friendly web applications using modern frameworks like React, Node.js, and MongoDB. From building dynamic dashboards to real-time chat applications, each project has strengthened my ability to work in fast-paced environments and deliver results as part of a team.</p>
-          <p>My goal is to craft meaningful digital experiences that not only look great but also empower users and address practical challenges. Whether collaborating on innovative projects or pursuing new learning opportunities, I’m committed to continuous growth as a developer and problem-solver.</p>
+         <p>Hi, I’m Nitin — a MERN Full Stack Developer and BTech CSE student at RIT Roorkee. I’m passionate about building fast, scalable, and user-focused web applications. What began as curiosity for how the web works has grown into a drive to solve real problems through clean and impactful digital experiences.</p>
+         <p>Over the past year, I’ve built and shipped projects ranging from responsive dashboards to real-time applications, strengthening my skills across React, Node.js, Express, and MongoDB. I enjoy turning ideas into smooth, functional products and thrive in environments where learning fast and building better is the norm.</p>
+         <p>I’m always exploring new technologies, improving my craft, and creating solutions that are both meaningful and intuitive. For me, every project is an opportunity to grow as a developer and problem-solver.</p>
+
         </div>
         <div class="stats">
           
@@ -946,6 +949,10 @@
               <li>Tailwind CSS</li>
               <li>Bootstrap</li>
               <li>Responsive Design</li>
+              <li>SASS</li>
+              <li>WireFraming </li>
+              <li>Figma</li>
+              <li>Next.js</li>
             </ul>
           </div>
           <div class="skills-card fadeIn">
@@ -955,8 +962,14 @@
               <li>Express.js</li>
               <li>MongoDB</li>
               <li>RESTful APIs</li>
-              <li>Firebase</li>
+              <li>Redis</li>
               <li>Authentication</li>
+              <li>JWT</li>
+              <li>Microservices</li>
+              <li>CI/CD</li>
+
+
+
             </ul>
           </div>
           <div class="skills-card fadeIn">
@@ -990,13 +1003,53 @@
     <div class="container">
       <h2>Featured Projects</h2>
       <div class="projects-cards">
+
+         <div class="projects-card fadeIn">
+          <img src="https://cdn.prod.website-files.com/5e71ed18578a651dd5c5f259/6763f4da2caeec1e3f6f2b0f_01_Chatbot_Lexikon_Retrieval%20Augmented%20Generation.svg" alt="AI Healthcare Chatbot" class="project-image">
+          <div class="project-content">
+            <h3>Memory-Augumented-Chatbot</h3>
+            <p>An AI-powered real-time chat agent built with LiveKit, Next.js, and a Python agent integrating Gemini API and mem0 for memory.
+The agent joins a LiveKit chat room as a participant, recalls user context across sessions, and generates personalized responses in real time..</p>
+            <div class="project-buttons">
+              <a href="https://github.com/nikku45/RAG-memory-Chatbot" class="btn" target="_blank">GitHub</a>
+              <a href="https://drive.google.com/file/d/1ARtlW167xQ_0e5VYAqPREh69RVUAG95Z/view?usp=sharing" class="btn btn-outline" target="_blank">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        
         <div class="projects-card fadeIn">
           <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/081098176216013.64c10a8cce558.png" alt="AI Healthcare Chatbot" class="project-image">
           <div class="project-content">
             <h3>Chat-App</h3>
-            <p>A real time chat app[currently working]</p>
+            <p>Himate is a real-time chat application built using the MERN stack with Socket.io for instant messaging. It includes features like one-to-one chat, file and voice message sharing, and video calling. The app ensures seamless communication with JWT-based authentication, efficient MongoDB data handling, and a clean, responsive UI for an engaging user experience.</p>
             <div class="project-buttons">
               <a href="https://github.com/nikku45/Chat-Application" class="btn" target="_blank">GitHub</a>
+              <a href="https://hi-mate.onrender.com/" class="btn btn-outline" target="_blank">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+         <div class="projects-card fadeIn">
+          <img src="https://cdn.dribbble.com/userupload/34068875/file/original-4bc182bb6ad41e66e31e26b48745d85d.png?format=webp&resize=400x300&vertical=center" alt="AI Healthcare Chatbot" class="project-image">
+          <div class="project-content">
+            <h3>BookIt</h3>
+            <p>BookIt is a full-stack experience booking application where users can browse experiences, view details, select dates and slots, apply promo codes, and confirm their bookings.
+It provides a seamless end-to-end booking experience with integrated pricing logic, promo validation, and reference ID generation.</p>
+            <div class="project-buttons">
+              <a href="https://github.com/nikku45/BookIt" class="btn" target="_blank">GitHub</a>
+              <a href="https://book-it-now-nu.vercel.app" class="btn btn-outline" target="_blank">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+         <div class="projects-card fadeIn">
+          <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2024/10/US_1561926_TaraRice_05825.jpg?fit=2500%2C1667" alt="AI Healthcare Chatbot" class="project-image">
+          <div class="project-content">
+            <h3>WanderLust</h3>
+            <p>A travel planning application designed to help users explore destinations, create personalized itineraries, and discover local experiences.</p>
+            <div class="project-buttons">
+              <a href="https://github.com/nikku45/WonderLust" class="btn" target="_blank">GitHub</a>
               <a href="#" class="btn btn-outline" target="_blank">Live Demo</a>
             </div>
           </div>
@@ -1014,17 +1067,7 @@
           </div>
         </div>
 
-        <div class="projects-card fadeIn">
-          <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2024/10/US_1561926_TaraRice_05825.jpg?fit=2500%2C1667" alt="AI Healthcare Chatbot" class="project-image">
-          <div class="project-content">
-            <h3>WanderLust</h3>
-            <p>A travel planning application designed to help users explore destinations, create personalized itineraries, and discover local experiences.</p>
-            <div class="project-buttons">
-              <a href="https://github.com/nikku45/WonderLust" class="btn" target="_blank">GitHub</a>
-              <a href="#" class="btn btn-outline" target="_blank">Live Demo</a>
-            </div>
-          </div>
-        </div>
+       
 
         <div class="projects-card fadeIn">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPNS-0RUIbV_Gz_FOnnVekNp7TiY1VZ-pOgQ&s" alt="AI Healthcare Chatbot" class="project-image">
